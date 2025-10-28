@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Jenis Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gray-custom': {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: '#6b7280',
+              600: '#4b5563',
+              700: '#374151',
+              800: '#1f2937',
+              900: '#111827',
+            }
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-overlay {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="font-poppins bg-gray-custom-50 text-gray-custom-800">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-gray-custom-700 to-gray-custom-800 text-white py-12 px-4 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Portofolio Jenis Batik Indonesia</h1>
+      <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Mengenal keindahan dan filosofi ragam batik nusantara</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-10 bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-center">
+      <div class="flex space-x-8 md:space-x-12">
+        <a href="#home" class="text-gray-custom-700 font-medium hover:text-gray-custom-900 transition-colors duration-300">Home</a>
+        <a href="#jenis-batik" class="text-gray-custom-700 font-medium hover:text-gray-custom-900 transition-colors duration-300">Jenis Batik</a>
+        <a href="#tentang" class="text-gray-custom-700 font-medium hover:text-gray-custom-900 transition-colors duration-300">Tentang</a>
+        <a href="#kontak" class="text-gray-custom-700 font-medium hover:text-gray-custom-900 transition-colors duration-300">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative py-24 md:py-32 bg-cover bg-center" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Batik_Mega_Mendung.jpg')">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="container mx-auto px-4 relative z-10 text-center text-white">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Warisan Budaya Dunia</h2>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">Batik Indonesia bukan hanya kain, tapi juga karya seni penuh makna dan sejarah yang mendalam.</p>
+    </div>
+  </section>
+
+  <!-- Jenis Batik Section -->
+  <section id="jenis-batik" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-custom-800">Jenis-Jenis Batik</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Batik Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik megamendung.webp" alt="Batik Megamendung" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Megamendung (Cirebon)</h3>
+            <p class="text-gray-custom-600">Motif awan yang melambangkan ketenangan dan kesabaran, khas dari Cirebon.</p>
+          </div>
+        </div>
+
+        <!-- Batik Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik parang.jpg" alt="Batik Parang" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Parang (Yogyakarta)</h3>
+            <p class="text-gray-custom-600">Motif diagonal berulang melambangkan semangat dan kesinambungan hidup.</p>
+          </div>
+        </div>
+
+        <!-- Batik Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik kaawung.jpg" alt="Batik Kawung" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Kawung (Solo)</h3>
+            <p class="text-gray-custom-600">Motif bulat simetris melambangkan keseimbangan dan kesucian hati.</p>
+          </div>
+        </div>
+
+        <!-- Batik Card 4 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik pekalongan.webp" alt="Batik Pekalongan" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Pekalongan</h3>
+            <p class="text-gray-custom-600">Batik dengan corak bunga dan warna cerah, menggambarkan semangat masyarakat pesisir.</p>
+          </div>
+        </div>
+
+        <!-- Batik Card 5 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik jepara.jpg" alt="Batik Jepara" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Jepara</h3>
+            <p class="text-gray-custom-600">Batik yang menggabungkan filosofi "sekar jagad" dengan motif flora dan ukiran khas Jepara.</p>
+          </div>
+        </div>
+
+        <!-- Batik Card 6 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-custom-100">
+          <img src="batik banten.jpg" alt="Batik Banten" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-custom-800 mb-2">Batik Banten</h3>
+            <p class="text-gray-custom-600">Batik dengan motif kaya filosofi seperti artefak, toponim desa, dan nama-nama bangsawan Kesultanan Banten.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+  <section id="tentang" class="py-16 bg-gray-custom-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-custom-800">Tentang Batik</h2>
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md border border-gray-custom-100">
+        <p class="text-gray-custom-700 text-lg leading-relaxed text-center">
+          Batik adalah teknik menggambar pola di atas kain dengan menggunakan malam (lilin) panas. 
+          Setiap daerah di Indonesia memiliki ciri khas dan filosofi sendiri yang tercermin dari motif dan warna batiknya.
+          UNESCO telah menetapkan batik Indonesia sebagai Warisan Kemanusiaan untuk Budaya Lisan dan Nonbendawi pada tahun 2009.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-gray-custom-800">Kontak</h2>
+      <p class="text-gray-custom-600 mb-6 max-w-2xl mx-auto">Jika Anda tertarik untuk mengetahui lebih lanjut tentang batik, silakan hubungi:</p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+        <div class="bg-gray-custom-50 p-6 rounded-lg shadow-sm border border-gray-custom-200">
+          <p class="font-semibold text-gray-custom-800 mb-2">Email</p>
+          <p class="text-gray-custom-600">info@batikindonesia.id</p>
+        </div>
+        <div class="bg-gray-custom-50 p-6 rounded-lg shadow-sm border border-gray-custom-200">
+          <p class="font-semibold text-gray-custom-800 mb-2">Instagram</p>
+          <p class="text-gray-custom-600">@batik_nusantara</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-custom-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Portofolio Batik Indonesia | Desain oleh M.Mahfud Ubaidil Khakim</p>
+    </div>
+  </footer>
+</body>
+</html>
